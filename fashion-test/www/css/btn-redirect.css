@@ -396,7 +396,7 @@
       background: url('/media/svg/next.svg') 0 0 /100% no-repeat;
       right: 10px;
   }
-  @media (max-width: 1024px){
+   @media (max-width: 1024px){ 
       .ff-card__items{
           height: auto;
       }
@@ -409,8 +409,9 @@
           max-width: 250px;
           margin: 10px 10px 10px 0;
         }
-  }
-  @media (max-width: 900px){
+      
+  } 
+   @media (max-width: 900px){
       .ff-card__items-img img{
           max-width: 150px;
           min-height: 150px;
@@ -433,9 +434,18 @@
           padding: 3px 10px;
   
       }
-  }
+  } 
+.wrap-for-save{
+  position: relative;
+}
+.content-for-save{
+  position: absolute;
+  width: 100%;
+  top: 5%;
+  z-index: 10;
+}
   
-  @media (max-width: 768px) {
+   @media (max-width: 768px) {
       .bttn-ringer {
         display: none;
       }
@@ -447,35 +457,43 @@
           font-size: 10px;
           padding: 1px 3px;
       }
+    } 
+     @media (max-width: 669px){
+      .wrap-mod-668{
+        display: none;
+      }
+      .wrap-slider-max-668{
+        display: block;
+      }
+      .ff-card__items-img img{
+        max-width: 350px;
+        min-height: 200px;
+        max-height: 200px;
+      }
+      
+      
+    } 
+    @media (min-width: 668px){
+      .wrap-slider-max-668{
+        display: none;
+      }
     }
-    @media (min-width: 669px){
-      .additional-for-adaptive{
+    @media screen and (max-width: 667px){
+      .wrap-mod-668{
           display: none;
-      }
-      .mod-1{
-          display: block;
-      }
-    }
-    @media (max-width: 668px){
-      .mod-1{
-          display: none;
-      }
-      .additional-for-adaptive{
-          display: block;
-      }
-    }
-    @media (min-width: 480px){
-      .additional-for-adaptive-480{
-          display: none;
-      }
-    }
-    @media (max-width: 480px){
-        .mod-480{
-            display: none;
         }
-        .additional-for-adaptive-480{
-            display: block;
+        .wrap-slider-max-668{
+          display: block;
         }
-    }
+        .ff-card__items-img img{
+          max-width: 350px;
+          min-height: 200px;
+          max-height: 200px;
+        }
+        
+  }
+
+    
+    
  
 

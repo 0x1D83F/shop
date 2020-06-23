@@ -409,15 +409,8 @@ body {
     clear: both;
     display: block;
 }
-.header{
-    position: relative;
-    top: 62vmin;
-}
-@media (max-width: 414px){
-    .header{
-        top: 70vmin;
-    }
-  }
+
+
 .header-wrapper {
     position: absolute;
     top: 0;
@@ -426,7 +419,7 @@ body {
     z-index: 999;
 }
 .header {
-    padding-top: 60px;
+    /* padding-top: 60px; */
 }
 .fixed-header {
     opacity: 0.8;
@@ -1728,6 +1721,7 @@ body {
         float: none;
     }
 }
+
 @media screen and (min-width: 768px) {
     .menu-btn {
         display: none;
@@ -1822,4 +1816,12 @@ body {
     .slider-controls .control-buttons .main-slider-next {
         margin-bottom: 20px;
     }
+    
+    }
 }
+
+
+
+
+
+

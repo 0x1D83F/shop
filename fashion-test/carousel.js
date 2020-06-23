@@ -106,6 +106,7 @@ $(document).on('ready', function () {
 ////////////Sales slider
 
 $(".sale-carousel-product").slick({
+  // normal options...
   infinite: true,
   arrows: true,
   // autoplay: true,
@@ -113,9 +114,5 @@ $(".sale-carousel-product").slick({
   mobileFirst: true,
   speed: 800
 });
-
-
-
-
 
 
