@@ -282,8 +282,200 @@
     font-family: Ubuntu, sans-serif;
   }
   
-  @media (max-width: 768px) {
-    .bttn-ringer {
-      display: none;
-    }
+ 
+  .sale-carousel-product{
+    background-color: #f5911e;
   }
+  .carousel-product-item-slide{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+  }
+  .ff-card-wrapper{
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px 40px 10px 0;
+  }
+  .ff-card-wrapper:last-of-type{
+      margin-right: 0;
+  }
+  .ff-card__items{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60vmin;
+    padding: 0 10px;
+  }
+  .ff-card__items-img {
+      position: relative;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 auto;
+              flex: 1 0 auto;
+  }
+  .ff-card__items-img img{
+    max-width: 250px;
+    min-height: 250px;
+    max-height: 250px;
+  }
+  .attention-discont{
+      position: absolute;
+      bottom: 7vmin;
+      right: 0;
+      background-color: rgb(219, 30, 30);
+      color: white;
+      font-size: 14px;
+      padding: 2px 5px;
+  }
+  
+  .ff-card__items-body{
+      text-align: center;
+     
+  }
+  .card__items-body_name p {
+      font-family: Ubuntu, sans-serif;
+      font-weight: 700;
+  }
+  
+  .card__items-body_old-price p{
+      font-family: Ubuntu, sans-serif;
+      text-decoration: line-through;
+      font-size: 14px;
+  }
+  .card__items-body_act-price{
+      font-family: Ubuntu, sans-serif;
+      font-weight: 700;
+      color: red;
+  }
+  .ff-card__items-btn{
+    padding-bottom: 20px;
+  }
+  .ff-card__items-btn button{
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #f5911e;
+    color: #fff;
+    padding: 3px 25px;
+    font-weight: 700;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+  }
+  .ff-card__items-btn button:hover{
+      background-color: rgb(241, 32, 32);
+      color: white;
+  }
+  
+  /* Стрелка */
+  .sale-carousel-product .slick-arrow{
+      position: absolute;
+      top: 55%;
+      width: 40px;
+      height: 70px;
+      z-index: 100;
+  }
+  /* Стрелка влево */
+  .sale-carousel-product .slick-arrow.slick-prev{
+      background: url('/media/svg/left-arrow.svg') 0 0 /100% no-repeat;
+      left: 10px;
+      
+  }
+  /* Стрелка вправо */
+  .sale-carousel-product .slick-arrow.slick-next{
+      background: url('/media/svg/next.svg') 0 0 /100% no-repeat;
+      right: 10px;
+  }
+  @media (max-width: 1024px){
+      .ff-card__items{
+          height: auto;
+      }
+      .ff-card__items-img img{
+          max-width: 200px;
+          min-height: 200px;
+          max-height: 200px;
+      }
+      .ff-card-wrapper{
+          max-width: 250px;
+          margin: 10px 10px 10px 0;
+        }
+  }
+  @media (max-width: 900px){
+      .ff-card__items-img img{
+          max-width: 150px;
+          min-height: 150px;
+          max-height: 150px;
+      }
+      .card__items-body_old-price p{
+          font-size: 12px;
+      }
+      .card__items-body_name p{
+          font-size: 12px;
+      }
+      .card__items-body_act-price p{
+          font-size: 12px;
+      }
+      .ff-card__items-btn{
+          padding-bottom: 10px;
+      }
+      .ff-card__items-btn button{
+          font-size: 12px;
+          padding: 3px 10px;
+  
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .bttn-ringer {
+        display: none;
+      }
+      .sale-carousel-product .slick-arrow{
+          width: 30px;
+          height: 60px;
+      }
+      .attention-discont{
+          font-size: 10px;
+          padding: 1px 3px;
+      }
+    }
+    @media (min-width: 669px){
+      .additional-for-adaptive{
+          display: none;
+      }
+      .mod-1{
+          display: block;
+      }
+    }
+    @media (max-width: 668px){
+      .mod-1{
+          display: none;
+      }
+      .additional-for-adaptive{
+          display: block;
+      }
+    }
+    @media (min-width: 480px){
+      .additional-for-adaptive-480{
+          display: none;
+      }
+    }
+    @media (max-width: 480px){
+        .mod-480{
+            display: none;
+        }
+        .additional-for-adaptive-480{
+            display: block;
+        }
+    }
+ 
+
